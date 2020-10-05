@@ -1,5 +1,7 @@
 <?php
+
 declare(strict_types=1);
+
 namespace DcrPHP\Annotations;
 
 /**
@@ -19,7 +21,6 @@ class Annotations extends AnnotationsInfo
     {
         $reader = new \DocBlockReader\Reader($this->getClass());
         return $reader->getParameter($parameterName);
-
     }
 
     /**
@@ -30,7 +31,7 @@ class Annotations extends AnnotationsInfo
      */
     public function getMethodParameter($parameterName)
     {
-        $reader = new \DocBlockReader\Reader($this->getClass(),$this->getMethod());
+        $reader = new \DocBlockReader\Reader($this->getClass(), $this->getMethod());
         return $reader->getParameter($parameterName);
     }
 
@@ -42,7 +43,7 @@ class Annotations extends AnnotationsInfo
      */
     public function getMethodVariableDeclarations($parameterName)
     {
-        $reader = new \DocBlockReader\Reader($this->getClass(),$this->getMethod());
+        $reader = new \DocBlockReader\Reader($this->getClass(), $this->getMethod());
         return $reader->getVariableDeclarations($parameterName);
     }
 
@@ -54,7 +55,7 @@ class Annotations extends AnnotationsInfo
      */
     public function getMethodParameters()
     {
-        $reader = new \DocBlockReader\Reader($this->getClass(),$this->getMethod());
+        $reader = new \DocBlockReader\Reader($this->getClass(), $this->getMethod());
         return $reader->getParameters();
     }
 
@@ -66,7 +67,7 @@ class Annotations extends AnnotationsInfo
      */
     public function getPropertyParameter($parameterName)
     {
-        $reader = new \DocBlockReader\Reader($this->getClass(),$this->getProperty(),'property');
+        $reader = new \DocBlockReader\Reader($this->getClass(), $this->getProperty(), 'property');
         return $reader->getParameter($parameterName);
     }
 }

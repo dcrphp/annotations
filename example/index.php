@@ -22,7 +22,7 @@ echo "\r\n";
 
 //获取Annotations->getCLassParameter的param注解
 echo "Annotations->getCLassParameter的param是:";
-print_r( $clsAnnotations->getMethodVariableDeclarations('param') );
+print_r($clsAnnotations->getMethodVariableDeclarations('param'));
 echo "\r\n";
 
 //获取Annotations的属性class的var注解

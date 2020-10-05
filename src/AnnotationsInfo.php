@@ -1,7 +1,8 @@
 <?php
-declare(strict_types=1);
-namespace DcrPHP\Annotations;
 
+declare(strict_types=1);
+
+namespace DcrPHP\Annotations;
 
 class AnnotationsInfo
 {
@@ -9,16 +10,15 @@ class AnnotationsInfo
      * @var class name
      */
     protected $class;
-    /**
+/**
      * @var method name
      */
     protected $method;
-    /**
+/**
      * @var class property name
      */
     protected $property;
-
-    /**
+/**
      * @return mixed
      */
     public function getClass()
